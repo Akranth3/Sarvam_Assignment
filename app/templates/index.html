@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Processing App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Image Processing Dashboard</h1>
+        
+        <div class="upload-section">
+            <div class="upload-box" id="dropZone">
+                <form id="uploadForm">
+                    <input type="file" id="fileInput" accept="image/*" hidden>
+                    <div class="upload-content">
+                        <p>📤</p>
+                        <p>Drag & Drop an image or click to upload</p>
+                    </div>
+                </form>
+            </div>
+            
+            <div id="preview" class="preview-section" hidden>
+                <h3>Preview</h3>
+                <img id="imagePreview" src="#" alt="Preview">
+                <button id="processButton" class="button">Process Image</button>
+            </div>
+        </div>
+        
+        <div id="results" class="results-section" hidden>
+            <h3>Results</h3>
+            <div id="resultsContent"></div>
+        </div>
+        
+        <div id="loading" class="loading" hidden>
+            Processing...
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
