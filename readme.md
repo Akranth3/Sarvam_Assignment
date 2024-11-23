@@ -94,3 +94,10 @@ Indic Be My Eyes is an AI-powered visual assistance application designed specifi
 - Optimized image processing pipeline
 - Caching of frequent translations
 - Resource management for concurrent users
+
+## Future direction
+- Include option to converting to specific languages
+- Option to use speficifc set of models for a task like if user wants spefific task like if he wants to understand handwriting or scene understanding (current application)
+- option to take speech input along with image to understad what the user wants.
+- options to have outputs speech in different languages.
+- improve the UI.
